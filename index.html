@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="final" style="display: none">
+      <h2>you answered all questions</h2>
+      <p class="score"></p>
+      <h4>try again</h4>
+      <button id="again">again</button>
+    </div>
+
+    <div class="quiz" style="display: none">
+      <div class="count">
+        <span>Question number</span>
+        <span class="current">0</span>
+        <span class="">of</span>
+        <span class="total"></span>
+        <span>Questions</span>
+      </div>
+
+      <h3 id="question"></h3>
+
+      <label id="a1" class="container"></label>
+      <label id="a2" class="container"></label>
+      <label id="a3" class="container"></label>
+      <label id="a4" class="container"></label>
+
+      <button id="next">Submit</button>
+    </div>
+
+    <div class="Settings">
+      <h2>Quize Settings</h2>
+
+      <div>
+        <label for="nQuestions"> Number of Questions: </label>
+        <input type="number" id="nQuestions" placeholder="from 1 to 100" />
+      </div>
+
+      <label for="category"> Select Category : </label>
+      <select name="" id="category">
+        <!-- <option value="all">Any Category</option> -->
+        <option value="18">Science Computers</option>
+        <option value="10">Books</option>
+        <option value="11">Film</option>
+        <option value="27">Animals</option>
+        <option value="23">History</option>
+        <option value="">Any Category</option>
+        <option value="">Any Category</option>
+        <option value="">Any Category</option>
+        <option value="">Any Category</option>
+        <option value="">Any Category</option>
+        <option value="">Any Category</option>
+      </select>
+      <div>
+        <label for="difficulty"> choice Difficulty :</label>
+        <!-- <label for="all">
+          <input type="radio" id="all" />
+          Any Difficulty
+        </label> -->
+
+        <label for="easy">
+          <input type="radio" id="easy" />
+          Easy
+        </label>
+
+        <label for="medium">
+          <input type="radio" id="medium" />
+          Medium
+        </label>
+
+        <label for="hard">
+          <input type="radio" id="hard" />
+          Hard
+        </label>
+      </div>
+      <button id="start" class="submit">start</button>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
